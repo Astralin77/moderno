@@ -28,9 +28,36 @@ li{
     padding: 0;
     list-style: none;
 }
+button{
+    &:focus{
+        outline: none;
+    }
+}
 
 .container{
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.container-fluid{
+    max-width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0 15px;
+        
+    }
+}
+
+.title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    color: #263238;
 }
